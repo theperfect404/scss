@@ -1,0 +1,86 @@
+nav {
+  background-color: rgb(196, 215, 219);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+nav li {
+  list-style: none;
+  margin: 1rem max(3vw, 0.7rem);
+  cursor: pointer;
+}
+nav li:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: min(95%, 700px);
+  padding-block: 3em;
+  margin: auto;
+}
+section img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section article {
+  letter-spacing: 1px;
+  color: rgb(196, 215, 219);
+}
+section article h2 {
+  font-size: 2rem;
+}
+section article p {
+  margin-block: 1.5em;
+  font-size: 1.2rem;
+}
+section article button {
+  background-color: rgb(196, 215, 219);
+  cursor: pointer;
+  padding: 0.3em 1.7em;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+section article button:hover {
+  opacity: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(42, 43, 43);
+}
+
+footer {
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: min(95%, 900px);
+  height: 1px;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0), gray, rgba(128, 128, 128, 0));
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer p {
+  text-align: center;
+  padding-block: 2em;
+  font-size: 1.2rem;
+  color: rgb(196, 215, 219);
+}/*# sourceMappingURL=main.css.map */

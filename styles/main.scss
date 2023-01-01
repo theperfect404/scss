@@ -1,0 +1,43 @@
+// extension
+// variables
+// nested rules
+// mixin
+// extend
+// seperate codes
+
+@import "./variables";
+@import "./nav";
+@import "./section";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $secondaryClr;
+}
+
+footer {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: min(95%, 900px);
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0),
+      gray,
+      rgba(128, 128, 128, 0)
+    );
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  p {
+    text-align: center;
+    padding-block: 2em;
+    font-size: $fs-md;
+    color: $primaryClr;
+  }
+}

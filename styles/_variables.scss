@@ -1,0 +1,14 @@
+// variable
+$primaryClr: rgb(196, 215, 219);
+$secondaryClr: rgb(42, 43, 43);
+$fs-md: 1.2rem;
+$fs-lg: 2rem;
+
+@mixin flexCenter($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $gap;
+}
